@@ -55,3 +55,6 @@
 [submodule "bundle/xptemplate"]
 	path = bundle/xptemplate
 	url = git://github.com/drmingdrmer/xptemplate.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = git://github.com/tomasr/molokai.git
