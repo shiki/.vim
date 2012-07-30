@@ -9,6 +9,7 @@ filetype plugin indent on
 :colorscheme molokai
 set guifont=DejaVu\ Sans\ Mono:h12.00
 
+set virtualedit=all
 set hidden
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is 2 spaces
@@ -52,7 +53,7 @@ silent! map <F3> :NERDTreeFind<CR>
 let NERDTreeWinSize=50
 
 set splitright
-set splitbottom
+"set splitbottom
 
 :command NT NERDTree
 
@@ -65,6 +66,7 @@ endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 2
+let g:ctrlp_switch_buffer = 1 " When opening a file, only jump to the buffer if it's opened in the current tab.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store  " MacOSX/Linux
 
 " http://stackoverflow.com/a/4800295/246142
