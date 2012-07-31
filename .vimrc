@@ -55,7 +55,7 @@ let NERDTreeWinSize=50
 set splitright
 "set splitbottom
 
-:command NT NERDTree
+:command! NT NERDTree
 
 " Hide toolbar in MacVim http://jonatkinson.co.uk/removing-toolbar-macvim/
 if has("gui_running")
@@ -71,6 +71,12 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store  " MacOSX/Linux
 
 " http://stackoverflow.com/a/4800295/246142
 set completeopt+=longest
+
+" Auto-hide autocomplete preview window after insert mode
+" http://stackoverflow.com/a/3106859/246142
+augroup GoAwayPreviewWindow
+autocmd! InsertLeave * wincmd z
+augroup end
 
 if has("autocmd") && exists("+omnifunc")
   autocmd Filetype *
