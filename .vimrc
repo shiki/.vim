@@ -38,7 +38,7 @@ set title                " change the terminal's title
 set nobackup
 set noswapfile
 
-set cpoptions+=$
+"set cpoptions+=$
 
 " Margin
 set colorcolumn=100
