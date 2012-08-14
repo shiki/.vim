@@ -76,3 +76,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/easygrep"]
+	path = bundle/easygrep
+	url = git://github.com/vim-scripts/EasyGrep.git
