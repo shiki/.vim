@@ -53,7 +53,7 @@ silent! map <F3> :NERDTreeFind<CR>
 let NERDTreeWinSize=50
 
 set splitright
-"set splitbottom
+set splitbelow
 
 :command! NT NERDTree
 
