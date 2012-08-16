@@ -6,7 +6,10 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
+"let g:molokai_original = 1
 :colorscheme molokai
+" Lighten the comment color a little bit
+:hi Comment         guifg=#75715E
 set guifont=DejaVu\ Sans\ Mono:h12.00
 
 set virtualedit=all
