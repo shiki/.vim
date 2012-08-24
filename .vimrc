@@ -41,23 +41,26 @@ set title                " change the terminal's title
 set nobackup
 set noswapfile
 
+set splitright
+set splitbelow
 "set cpoptions+=$
 
 " Margin
 set colorcolumn=100
 
+" Remove trailing whitespace (http://vim.wikia.com/wiki/Remove_unwanted_spaces)
+autocmd FileType c,cpp,java,php,coffee,ruby,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+" Super retab (http://vim.wikia.com/wiki/Super_retab)
+:command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
+:command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
+
 " NERD Tree
 nmap <silent> <special> <F2> :NERDTreeToggle<RETURN>
-
 " http://stackoverflow.com/a/10417725/246142
 silent! map <F3> :NERDTreeFind<CR>
-
 " NERD window size
 let NERDTreeWinSize=50
-
-set splitright
-set splitbelow
-
 :command! NT NERDTree
 
 " Hide toolbar in MacVim http://jonatkinson.co.uk/removing-toolbar-macvim/
