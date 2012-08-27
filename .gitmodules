@@ -13,9 +13,6 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = git://github.com/Shougo/neocomplcache.git
-[submodule "bundle/neocomplcache-snippets-complete"]
-	path = bundle/neocomplcache-snippets-complete
-	url = git://github.com/Shougo/neocomplcache-snippets-complete.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -52,9 +49,6 @@
 [submodule "bundle/taglist-plus"]
 	path = bundle/taglist-plus
 	url = git://github.com/int3/vim-taglist-plus.git
-[submodule "bundle/xptemplate"]
-	path = bundle/xptemplate
-	url = git://github.com/drmingdrmer/xptemplate.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = git://github.com/tomasr/molokai.git

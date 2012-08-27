@@ -55,6 +55,10 @@ autocmd FileType c,cpp,java,php,coffee,ruby,python autocmd BufWritePre <buffer> 
 :command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
 :command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
 
+" Make + and - add a blank line below or above respectively
+nmap + :put =''<CR>
+nmap - :put! =''<CR>
+
 " NERD Tree
 nmap <silent> <special> <F2> :NERDTreeToggle<RETURN>
 " http://stackoverflow.com/a/10417725/246142
@@ -156,10 +160,6 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 if has("autocmd")
     au BufRead,BufNewFile *.ejs setfiletype html
 endif
-
-" Make + and - add a blank line below or above respectively
-nmap + :put =''<CR>
-nmap - :put! =''<CR>
 
 " MiniBufExpl
 let g:miniBufExplCloseOnSelect = 1
