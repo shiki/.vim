@@ -186,3 +186,14 @@ if executable('coffeetags')
         \ }
         \ }
 endif
+
+" XPTemplate
+" use <Tab> for completion
+"let g:xptemplate_key = '<Plug>triggerxpt'
+"inoremap <Plug>closePUM <C-v><C-v><BS>
+"imap <TAB> <Plug>closePUM<Plug>triggerxpt
+"let g:xptemplate_fallback = 'nore:<TAB>' " Optional. Use this only when you have no other plugin like SuperTab to handle <TAB>.
+
+" break after opening function/class braces
+let g:xptemplate_vars = "BRfun=\n"
+

@@ -76,15 +76,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/garbas/vim-snipmate.git
-[submodule "bundle/tlib"]
-	path = bundle/tlib
-	url = git://github.com/tomtom/tlib_vim.git
-[submodule "bundle/addon-mw-utils"]
-	path = bundle/addon-mw-utils
-	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/snipmate-snippets"]
-	path = bundle/snipmate-snippets
-	url = git://github.com/honza/snipmate-snippets.git
+[submodule "bundle/xptemplate"]
+	path = bundle/xptemplate
+	url = git://github.com/drmingdrmer/xptemplate.git
