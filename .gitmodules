@@ -79,3 +79,6 @@
 [submodule "bundle/xptemplate"]
 	path = bundle/xptemplate
 	url = git://github.com/drmingdrmer/xptemplate.git
+[submodule "bundle/xptemplate-snippets"]
+	path = bundle/xptemplate-snippets
+	url = git://github.com/shiki/xptemplate-snippets.git

@@ -194,6 +194,9 @@ endif
 "imap <TAB> <Plug>closePUM<Plug>triggerxpt
 "let g:xptemplate_fallback = 'nore:<TAB>' " Optional. Use this only when you have no other plugin like SuperTab to handle <TAB>.
 
+" No spaces (this doesn't seem to work)
+" let g:xptemplate_vars = "SParg=''"
+
 " break after opening function/class braces
 let g:xptemplate_vars = "BRfun=\n"
 
