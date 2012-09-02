@@ -59,6 +59,9 @@ autocmd FileType c,cpp,java,php,coffee,ruby,python autocmd BufWritePre <buffer> 
 nmap + :put =''<CR>
 nmap - :put! =''<CR>
 
+" Open tag in vsplit (http://stackoverflow.com/a/563992))
+map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 " NERD Tree
 nmap <silent> <special> <F2> :NERDTreeToggle<RETURN>
 " http://stackoverflow.com/a/10417725/246142
@@ -117,7 +120,7 @@ inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
 " SuperTab like snippets behavior.
-imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+"imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
