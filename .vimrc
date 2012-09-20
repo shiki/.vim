@@ -46,10 +46,12 @@ set splitbelow
 "set cpoptions+=$
 
 " Margin
-set colorcolumn=100
+set colorcolumn=120
 
 " Remove trailing whitespace (http://vim.wikia.com/wiki/Remove_unwanted_spaces)
-autocmd FileType c,cpp,java,php,coffee,ruby,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType c,cpp,java,php,coffee,ruby,python,remarkup autocmd BufWritePre <buffer> :%s/\s\+$//e
+" Map F5 to remove trailing whitespace
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Super retab (http://vim.wikia.com/wiki/Super_retab)
 :command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
@@ -172,6 +174,10 @@ let g:miniBufExplorerMoreThanOne=999999
 
 " TagBar
 nmap <F4> :TagbarOpen fjc<cr>
+
+" CoffeeScript plugin
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
 " CoffeeTags
 if executable('coffeetags')
