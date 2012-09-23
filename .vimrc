@@ -47,7 +47,7 @@ set splitbelow
 "set cpoptions+=$
 
 " Margin
-set colorcolumn=120
+set colorcolumn=100
 
 " Remove trailing whitespace (http://vim.wikia.com/wiki/Remove_unwanted_spaces)
 autocmd FileType c,cpp,java,php,coffee,ruby,python,remarkup autocmd BufWritePre <buffer> :%s/\s\+$//e
@@ -84,6 +84,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_switch_buffer = 1 " When opening a file, only jump to the buffer if it's opened in the current tab.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store  " MacOSX/Linux
+let g:ctrlp_working_path_mode = 'ca'
 
 " http://stackoverflow.com/a/4800295/246142
 set completeopt+=longest
