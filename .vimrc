@@ -78,6 +78,9 @@ if has("gui_running")
     set guioptions=egmrt
 endif
 
+" Powerline
+set laststatus=2 "Enable powerline for single buffers (no splits)
+
 " Buffergator
 let g:buffergator_viewport_split_policy="B" " Show vertically in the bottom
 let g:buffergator_split_size=20 
