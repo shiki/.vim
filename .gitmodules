@@ -58,9 +58,6 @@
 [submodule "bundle/delimitmate"]
 	path = bundle/delimitmate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule "bundle/checksyntax"]
-	path = bundle/checksyntax
-	url = git://github.com/tomtom/checksyntax_vim.git
 [submodule "bundle/phpcomplete"]
 	path = bundle/phpcomplete
 	url = git://github.com/shawncplus/phpcomplete.vim.git
