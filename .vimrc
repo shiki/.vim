@@ -78,6 +78,7 @@ if has("gui_running")
     set guioptions=egmrt
 endif
 
+
 " Powerline
 set laststatus=2 "Enable powerline for single buffers (no splits)
 
@@ -85,6 +86,14 @@ set laststatus=2 "Enable powerline for single buffers (no splits)
 let g:buffergator_viewport_split_policy="B" " Show vertically in the bottom
 let g:buffergator_split_size=20 
 let g:buffergator_sort_regime="basename"
+
+" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_phpcs_disable=1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 " https://github.com/kien/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
