@@ -4,12 +4,10 @@
 [submodule "bundle/zoomwin"]
 	path = bundle/zoomwin
 	url = git://github.com/vim-scripts/ZoomWin.git
+  ignore = dirty
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "bundle/minibufexpl"]
-	path = bundle/minibufexpl
-	url = git://github.com/fholgado/minibufexpl.vim.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = git://github.com/Shougo/neocomplcache.git
@@ -70,12 +68,14 @@
 [submodule "bundle/easygrep"]
 	path = bundle/easygrep
 	url = git://github.com/vim-scripts/EasyGrep.git
+  ignore = dirty
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
 [submodule "bundle/xptemplate"]
 	path = bundle/xptemplate
 	url = git://github.com/drmingdrmer/xptemplate.git
+  ignore = dirty
 [submodule "bundle/xptemplate-snippets"]
 	path = bundle/xptemplate-snippets
 	url = git://github.com/shiki/xptemplate-snippets.git

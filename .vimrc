@@ -188,11 +188,6 @@ if has("autocmd")
     au BufRead,BufNewFile *.ejs setfiletype html
 endif
 
-" MiniBufExpl
-let g:miniBufExplCloseOnSelect = 1
-nmap <C-TAB> :MiniBufExplorer<cr>
-" Prevent auto-open of MBE unless you tell it to
-let g:miniBufExplorerMoreThanOne=999999
 
 " TagBar
 nmap <F4> :TagbarOpen fjc<cr>
