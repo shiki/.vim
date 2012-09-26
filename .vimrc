@@ -78,6 +78,11 @@ if has("gui_running")
     set guioptions=egmrt
 endif
 
+" Buffergator
+let g:buffergator_viewport_split_policy="B" " Show vertically in the bottom
+let g:buffergator_split_size=20 
+let g:buffergator_sort_regime="basename"
+
 " https://github.com/kien/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
