@@ -50,7 +50,7 @@ set splitbelow
 set colorcolumn=100
 
 " Remove trailing whitespace (http://vim.wikia.com/wiki/Remove_unwanted_spaces)
-autocmd FileType c,cpp,java,php,coffee,ruby,python,remarkup autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType c,cpp,java,javascript,php,coffee,ruby,python,remarkup,markdown autocmd BufWritePre <buffer> :%s/\s\+$//e
 " Map F5 to remove trailing whitespace
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
