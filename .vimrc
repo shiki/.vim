@@ -10,7 +10,7 @@ filetype plugin indent on
 :colorscheme molokai
 " Lighten the comment color a little bit
 :hi Comment         guifg=#75715E
-set guifont=DejaVu\ Sans\ Mono:h12.00
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12.00
 
 set virtualedit=all
 set hidden
@@ -81,6 +81,7 @@ endif
 
 " Powerline
 set laststatus=2 "Enable powerline for single buffers (no splits)
+let g:Powerline_symbols='fancy'
 
 " Buffergator
 let g:buffergator_viewport_split_policy="B" " Show vertically in the bottom
