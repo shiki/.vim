@@ -179,7 +179,7 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 " Improving the pattern for :: a little because most of the time, autocompleting after
 " double colons delays the popup for about 10 seconds.
 "let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::\h\w\w'
+let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w+\|\h\w*::\h\w\w'
 
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
